@@ -7,9 +7,20 @@
 </head>
 
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
+    <script>
+        // Example usage of the student object and getKeys method
+        const student = {
+            name: "John Doe",
+        };
+
+        // Add getKeys method to Object.prototype
+        Object.prototype.getKeys = function () {
+            return Object.keys(this);
+        };
+
+        // Display the result in the console
+        console.log(student.getKeys()); // Output: ['name']
+    </script>
 
 </body>
 
